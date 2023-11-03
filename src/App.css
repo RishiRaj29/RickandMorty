@@ -1,0 +1,75 @@
+/* components.css */
+
+.character-card {
+  padding: 1rem;
+  text-align: center;
+}
+
+.character-card img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.character-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+@media (max-width: 600px) {
+  .character-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* CharacterDetails.css */
+
+.character-details {
+  display: flex;
+  align-items: center;
+}
+
+.character-img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-right: 2rem;
+}
+
+.episodes-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+/* Header.css */
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.search-form {
+  display: flex;
+}
+
+.search-input,
+.search-button {
+  padding: 0.5rem 1rem;
+}
+
+/* Filter.css */
+
+.filter-form {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.filter-button {
+  padding: 0.5rem 1rem;
+}
